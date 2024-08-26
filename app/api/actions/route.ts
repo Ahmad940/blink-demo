@@ -85,7 +85,7 @@ export const POST = async (req: Request) => {
   }
 }
 
-export const OPTIOMS = (req: Request) => {
+export const OPTIONS = (req: Request) => {
   return Response.json(null, {
     headers: ACTIONS_CORS_HEADERS,
   })
