@@ -60,7 +60,7 @@ export const POST = async (req: Request) => {
       })
     )
     tx.recentBlockhash = (
-      await new Connection(clusterApiUrl('mainnet-beta')).getLatestBlockhash()
+      await new Connection(clusterApiUrl('devnet')).getLatestBlockhash()
     ).blockhash
     tx.feePayer = sender
 
