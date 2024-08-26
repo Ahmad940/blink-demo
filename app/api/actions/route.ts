@@ -30,7 +30,7 @@ export const GET = async (req: Request) => {
   })
 }
 
-export const OPTIONS = GET
+// export const OPTIONS = GET
 
 export const POST = async (req: Request) => {
   try {
@@ -83,4 +83,10 @@ export const POST = async (req: Request) => {
       headers: ACTIONS_CORS_HEADERS,
     })
   }
+}
+
+export const OPTIOMS = (req: Request) => {
+  return Response.json(null, {
+    headers: ACTIONS_CORS_HEADERS,
+  })
 }
